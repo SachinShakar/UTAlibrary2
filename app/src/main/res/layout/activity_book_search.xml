@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/books"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp"
+            android:paddingTop="0dp"
+            tools:context="com.sachinshankar.utalibrary.BookSearch">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/c1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="308dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="88dp"
+            android:layout_marginRight="88dp"
+            android:layout_marginTop="115dp"
+            android:background="@drawable/rounded_edittext"
+            android:ems="10"
+            android:hint="Title or Description of the Book"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:tooltipText="Enter title or description for book @android:string/search_go"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="88dp"
+            android:layout_marginEnd="88dp"/>
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="54dp"
+            android:background="@android:color/holo_blue_bright"
+            android:text="Search"
+            android:textColorLink="@android:color/background_dark"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search_text"/>
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="313dp"
+            android:background="@android:color/background_light"
+            android:inputType="textMultiLine"
+            android:scrollHorizontally="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TableLayout
+            android:id="@+id/result_table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="316dp"
+            android:orientation="vertical"
+            android:background="@android:color/background_light"
+            android:scrollHorizontally="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+
+        </TableLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

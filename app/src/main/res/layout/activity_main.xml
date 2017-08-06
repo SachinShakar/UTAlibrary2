@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+
+
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:src="@drawable/fablab"></ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            android:background="#9D9D9D">
+            <FrameLayout
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="40dp"
+                android:paddingTop="8dp">
+                <ImageButton
+                    android:background="@drawable/refresh36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRefresh"/>
+            </FrameLayout>
+
+
+            <TextView
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/txtheadcl"
+                android:paddingLeft="16dp"
+                android:layout_weight="1"
+
+
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:text="Central Library"
+                >
+            </TextView>
+            <TextView
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/txtheadasl"
+                android:paddingLeft="16dp"
+                android:layout_weight="1"
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:text="Arch and Fine Arts Library">
+            </TextView>
+            <TextView
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/txtheadsel"
+                android:paddingLeft="16dp"
+                android:layout_weight="1"
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:text="Science and Engg Library">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/holo_green_light"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtcatStudyrooms"
+                android:layout_width="128dp"
+                android:layout_height="match_parent"
+                android:background="#9D9D9D"
+                android:onClick="viewResources"
+                android:paddingLeft="16dp"
+                android:text="@string/sr"></TextView>
+
+            <TextView xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/txtsrcl"
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:paddingLeft="16dp"
+                android:paddingTop="4dp"
+                android:text="0"
+
+                >
+
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/linsrcl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+
+
+                >
+
+                <ImageButton
+                    android:id="@+id/imgsrcl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/visibility18"
+                    android:onClick="onClickImgBtn" />
+            </LinearLayout>
+
+            <TextView xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/txtsrasl"
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="16dp"
+                android:paddingTop="5dp"
+                android:text="0"></TextView>
+
+            <LinearLayout
+                android:id="@+id/linsrasl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp">
+
+                <ImageButton
+                    android:id="@+id/imgsrasl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/visibility18"
+                    android:onClick="onClickImgBtn" />
+            </LinearLayout>
+
+            <TextView xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/txtsrsel"
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="16dp"
+                android:paddingTop="5dp"
+                android:text="0"></TextView>
+
+            <LinearLayout
+                android:id="@+id/linsrsel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp">
+
+                <ImageButton
+                    android:id="@+id/imgsrsel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/visibility18"
+                    android:onClick="onClickImgBtn" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@android:color/holo_green_light"
+            android:orientation="horizontal">
+
+            <TextView xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/txtcatcomp"
+                android:layout_width="128dp"
+                android:layout_height="match_parent"
+                android:background="#9D9D9D"
+                android:onClick="viewResources"
+                android:paddingLeft="16dp"
+                android:text="@string/comp"></TextView>
+
+            <TextView xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/txtcompcl"
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+
+
+                android:layout_weight="1"
+                android:paddingLeft="16dp"
+                android:text="0">
+
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/lincompcl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+
+                >
+
+                <ImageButton
+                    android:id="@+id/imgcompcl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/visibility18"
+                    android:onClick="onClickImgBtn" />
+            </LinearLayout>
+
+            <TextView xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/txtcompasl"
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:paddingLeft="16dp"
+                android:text="0"></TextView>
+
+            <LinearLayout
+                android:id="@+id/lincompasl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/imgcompasl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/visibility18"
+                    android:onClick="onClickImgBtn" />
+            </LinearLayout>
+
+            <TextView xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/txtcompsel"
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="16dp"
+                android:text="0"></TextView>
+
+            <LinearLayout
+                android:id="@+id/lincompsel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/imgcompsel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/visibility18"
+                    android:onClick="onClickImgBtn" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@android:color/holo_green_light"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtcatlappy"
+                android:layout_width="128dp"
+                android:layout_height="match_parent"
+                android:background="#9D9D9D"
+                android:onClick="viewResources"
+                android:paddingLeft="16dp"
+                android:text="@string/lappy">
+            </TextView>
+
+            <TextView
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/txtlappycl"
+                android:paddingLeft="16dp"
+                android:layout_weight="1"
+
+
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+                android:text="0"
+                >
+
+            </TextView>
+            <LinearLayout
+                android:id="@+id/linlappycl"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+
+
+                >
+                <ImageButton
+                    android:id="@+id/imglappycl"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:onClick="onClickImgBtn"
+                    android:background="@drawable/visibility18"
+                    />
+            </LinearLayout>
+            <TextView
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/txtlappyasl"
+                android:paddingLeft="16dp"
+                android:layout_weight="1"
+
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+                android:text="0">
+            </TextView>
+            <LinearLayout
+                android:id="@+id/linlappyasl"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                >
+                <ImageButton
+                    android:id="@+id/imglappyasl"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+
+                    android:onClick="onClickImgBtn"
+                    android:background="@drawable/visibility18"
+                    />
+            </LinearLayout>
+            <TextView
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/txtlappysel"
+                android:paddingLeft="16dp"
+                android:layout_weight="1"
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+                android:text="0">
+            </TextView>
+            <LinearLayout
+                android:id="@+id/linlappysel"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                >
+                <ImageButton
+                    android:id="@+id/imglappysel"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:onClick="onClickImgBtn"
+                    android:background="@drawable/visibility18"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@android:color/holo_green_light"
+            android:orientation="horizontal">
+            <TextView
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/txtcatipads"
+                android:paddingLeft="16dp"
+                android:background="#9D9D9D"
+                android:layout_width="128dp"
+                android:onClick="viewResources"
+                android:layout_height="match_parent"
+                android:text="@string/ipads">
+            </TextView>
+            <TextView
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/txtipadcl"
+                android:paddingLeft="16dp"
+                android:layout_weight="1"
+
+
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+                android:text="0"
+                >
+
+            </TextView>
+            <LinearLayout
+                android:id="@+id/linipadcl"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+
+
+                >
+                <ImageButton
+                    android:id="@+id/imgipadcl"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:onClick="onClickImgBtn"
+                    android:background="@drawable/visibility18"
+                    />
+            </LinearLayout>
+            <TextView
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/txtipadasl"
+                android:paddingLeft="16dp"
+                android:layout_weight="1"
+
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+                android:text="0">
+            </TextView>
+            <LinearLayout
+                android:id="@+id/linipadasl"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                >
+                <ImageButton
+                    android:id="@+id/imgipadasl"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+
+                    android:onClick="onClickImgBtn"
+                    android:background="@drawable/visibility18"
+                    />
+            </LinearLayout>
+            <TextView
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/txtipadsel"
+                android:paddingLeft="16dp"
+                android:layout_weight="1"
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+                android:text="0">
+            </TextView>
+            <LinearLayout
+                android:id="@+id/linipadsel"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                >
+                <ImageButton
+                    android:id="@+id/imgipadsel"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:onClick="onClickImgBtn"
+                    android:background="@drawable/visibility18"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/holo_green_light"
+            android:orientation="horizontal">
+            <TextView
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/txtcatmacbook"
+                android:paddingLeft="16dp"
+                android:background="#9D9D9D"
+                android:layout_width="128dp"
+                android:onClick="viewResources"
+                android:layout_height="match_parent"
+                android:text="@string/mac">
+            </TextView>
+            <TextView
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/txtmaccl"
+                android:paddingLeft="16dp"
+                android:layout_weight="1"
+
+
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+                android:text="0"
+                >
+
+            </TextView>
+            <LinearLayout
+                android:id="@+id/linmaccl"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+
+                android:layout_weight="1"
+
+
+                >
+                <ImageButton
+                    android:id="@+id/imgmaccl"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:onClick="onClickImgBtn"
+
+                    android:background="@drawable/visibility18"
+                    />
+            </LinearLayout>
+            <TextView
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/txtmacasl"
+                android:paddingLeft="16dp"
+                android:layout_weight="1"
+
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+                android:text="0">
+            </TextView>
+            <LinearLayout
+                android:id="@+id/linmacasl"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                >
+                <ImageButton
+                    android:id="@+id/imgmacasl"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+
+                    android:onClick="onClickImgBtn"
+                    android:background="@drawable/visibility18"
+                    />
+            </LinearLayout>
+            <TextView
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/txtmacsel"
+                android:paddingLeft="16dp"
+                android:layout_weight="1"
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+                android:text="0">
+            </TextView>
+            <LinearLayout
+                android:id="@+id/linmacsel"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                >
+                <ImageButton
+                    android:id="@+id/imgmacsel"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:onClick="onClickImgBtn"
+                    android:background="@drawable/visibility18"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:background="@android:color/holo_green_light"
+            android:orientation="horizontal">
+            <TextView
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/txtcatchromebooks"
+                android:paddingLeft="16dp"
+                android:background="#9D9D9D"
+                android:layout_width="128dp"
+                android:onClick="viewResources"
+                android:layout_height="match_parent"
+                android:text="@string/chrome">
+            </TextView>
+            <TextView
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/txtchromecl"
+                android:paddingLeft="16dp"
+                android:layout_weight="1"
+
+
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+                android:text="0"
+                >
+
+            </TextView>
+            <LinearLayout
+                android:id="@+id/linchromecl"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+
+
+                >
+                <ImageButton
+                    android:id="@+id/imgchromecl"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:onClick="onClickImgBtn"
+                    android:background="@drawable/visibility18"
+                    />
+            </LinearLayout>
+            <TextView
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/txtchromeasl"
+                android:paddingLeft="16dp"
+                android:layout_weight="1"
+
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+                android:text="0">
+            </TextView>
+            <LinearLayout
+                android:id="@+id/linchromeasl"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                >
+                <ImageButton
+                    android:id="@+id/imgchromeasl"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+
+                    android:onClick="onClickImgBtn"
+                    android:background="@drawable/visibility18"
+                    />
+            </LinearLayout>
+            <TextView
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/txtchromesel"
+                android:paddingLeft="16dp"
+                android:layout_weight="1"
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+                android:text="0">
+            </TextView>
+            <LinearLayout
+                android:id="@+id/linchromesel"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                >
+                <ImageButton
+                    android:id="@+id/imgchromesel"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:onClick="onClickImgBtn"
+                    android:background="@drawable/visibility18"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@android:color/holo_green_light"
+            android:orientation="horizontal">
+            <TextView
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/txtcatsurfacetablet"
+                android:paddingLeft="16dp"
+                android:background="#9D9D9D"
+                android:layout_width="128dp"
+                android:layout_height="match_parent"
+                android:onClick="viewResources"
+                android:text="@string/surf">
+            </TextView>
+            <TextView
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/txtsurfcl"
+                android:paddingLeft="16dp"
+                android:layout_weight="1"
+
+
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+                android:text="0"
+                >
+
+            </TextView>
+            <LinearLayout
+                android:id="@+id/linsurfcl"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+
+
+                >
+                <ImageButton
+                    android:id="@+id/imgsurfcl"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:onClick="onClickImgBtn"
+                    android:background="@drawable/visibility18"
+                    />
+            </LinearLayout>
+            <TextView
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/txtsurfasl"
+                android:paddingLeft="16dp"
+                android:layout_weight="1"
+
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+                android:text="0">
+            </TextView>
+            <LinearLayout
+                android:id="@+id/linsurfasl"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                >
+                <ImageButton
+                    android:id="@+id/imgsurfasl"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+
+                    android:onClick="onClickImgBtn"
+                    android:background="@drawable/visibility18"
+                    />
+            </LinearLayout>
+            <TextView
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/txtsurfsel"
+                android:paddingLeft="16dp"
+                android:layout_weight="1"
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+                android:text="0">
+            </TextView>
+            <LinearLayout
+                android:id="@+id/linsurfsel"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                >
+                <ImageButton
+                    android:id="@+id/imgsurfsel"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:onClick="onClickImgBtn"
+                    android:background="@drawable/visibility18"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

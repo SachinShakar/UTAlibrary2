@@ -1,0 +1,161 @@
+<resources>
+    <string name="app_name">UTAlibrary</string>
+    <string name="sr"><u>Study Rooms</u></string>
+    <string name="comp"><u>Computers</u></string>
+    <string name="lappy"><u>Laptops</u></string>
+    <string name="ipads"><u>Ipads</u></string>
+    <string name="chrome"><u>Chrome Books</u></string>
+    <string name="surf"><u>Surface Tables</u></string>
+    <string name="mac"><u>Mac Books</u></string>
+    <string name="laptop_detail">
+        <![CDATA[
+            <p> <b>Access: </b>No renewals </p>
+            <p><b>Lending Period: </b> 3 days</p>
+            <p><b>Location: </b> Architecture & Fine Arts Library <br/> Central Library <br/> Science & Engineering Library <br/></p>
+            <p> <h4>ELIGIBLE BORROWERS</h4> Current UT Arlington faculty, staff and students are eligible to check out a laptop. </p>
+            <p> <h4>BORROWING A LAPTOP</h4> You can borrow a laptop from Central, Science & Engineering, and Architecture & Fine Arts Service Desks for 3 days. Laptops can be used outside the libraries, but the wireless equipment will only work on campus in areas with access to the UT Arlington wireless network.</p>
+                <p>Laptops are available on a first-come first-serve basis and are non-renewable. </p>
+                <p>You can only borrow one laptop or tablet at a time.</p>
+                <p> When a laptop is borrowed, the individual doing so assumes full financial responsibility for the property.</p>
+                <p> Laptops must not be left unattended at any time.
+                    Any malfunctions should be reported to staff when the laptop is returned. </p>
+            </p>
+            <p>
+                <h4>LAPTOP USE</h4>
+                <p>When laptops are turned off and on after each circulation, laptops are returned to a default setting and any work done by the user is erased.</p>
+                <p>The Library is not responsible for any files left on any laptop or for loss of or damage to a users file during the loan period. </p>
+                <p>The Library is not responsible for any computer viruses that may be transferred to, or from, a users CD or DVD. </p>
+                <p>For help using laptops (both hardware and software), the borrower may seek assistance from the OIT Help Desk on the first floor of the Central Library.</p>
+            </p>
+            <p>
+                <h4>REPLACEMENT CHARGES</h4>
+                <p>A replacement charge for damage to or the loss of a laptop and/or its peripherals will be assessed as necessary. The estimated value of the equipment is $3000. A processing fee of $35 and overdue fines may also be incurred, depending upon circumstances.</p>
+            </p>
+
+            <p>
+                <h4>APPLICATIONS AVAILABLE ON LAPTOPS</h4>
+                7-Zip 9.20 (x64 edition) <br/>
+                ADINA System 9.0 <br/>
+                Adobe Acrobat XI Pro <br/>
+                Adobe AIR <br/>
+                Adobe Dreamweaver CC <br/>
+                Adobe ExtendScript Toolkit CC <br/>
+                Adobe Extension Manager CC <br/>
+                Adobe Fireworks CS6 <br/>
+                Adobe Flash Player 18 ActiveX <br/>
+                Adobe Flash Player 18 NPAPI <br/>
+                Adobe Flash Professional CC <br/>
+                Adobe Illustrator CC <br/>
+                Adobe Photoshop CC <br/>
+                Adobe Shockwave Player 12.1 <br/>
+                ArchGIS 10.2 for Desktop <br/>
+                Autodesk 360 <br/>
+                Autodesk AutoCAD 2014 – English <br/>
+                Autodesk ReCap <br/>
+                Blackboard Collaborate Launcher <br/>
+                Blackboard IM 4.0.1-C <br/>
+                Blender <br/>
+                Document Express DjVu Plug-in <br/>
+                Freedom Scientific FSReader 2.0 <br/>
+                Freedom Scientific JAWS 13.0 <br/>
+                Freedom Scientific MAGic 11.0 <br/>
+                Google Earth <br/>
+                IBM SPSS Statistics 22 <br/>
+                Inkscape 0.48.5 <br/>
+                Java 8 Update 60 <br/>
+                LizardTech ExpressView Browser Plugin <br/>
+                MATLAB R2014a <br/>
+                Mendeley Desktop <br/>
+                MeshLab <br/>
+                Microsoft Office Professional Plus 2013 <br/>
+                Microsoft Silverlight <br/>
+                Morningstar Direct <br/>
+                Naxos Sheet Music Viewer <br/>
+                Pearson LockDown Browser <br/>
+                Pharos <br/>
+                ProQuest for Word <br/>
+                QuickTime <br/>
+                Roxio Creator Starter <br/>
+                Sibelius Scorch <br/>
+                SketchUp 2015 <br/>
+                Skype 7.0 <br/>
+                SSH Secure Shell <br/>
+                System Center Endpoint Protection <br/>
+                VLC media player <br/>
+
+            </p>
+        ]]>
+    </string>
+    <string
+        name="title_activity_user_login">
+        UserLogin
+    </string>
+
+    <string name="ipad_detail">
+        <![CDATA[
+            <p> <b>Access: </b>No renewals </p>
+            <p><b>Lending Period: </b> 3 hours</p>
+            <p><b>Location: </b> Architecture & Fine Arts Library <br/> Central Library <br/> Science & Engineering Library <br/></p>
+            <p> <h4>ELIGIBLE BORROWERS</h4> Current UT Arlington faculty, staff and students are eligible to check out a laptop. </p>
+            <p> <h4>BORROWING AN IPAD</h4> You can borrow a tablet from Central, Science & Engineering, and Architecture & Fine Arts Service Desks for 4 hours. Tablets can be used outside the libraries, but the wireless equipment will only work on campus in areas with access to the UT Arlington wireless network.</p>
+                <p>Tablets are available on a first-come first-serve basis and are non-renewable. You can only borrow one tablet or laptop at a time.</p>
+                <p>You can only borrow one laptop or tablet at a time.</p>
+                <p> When a tablet is borrowed, the individual doing so assumes full financial responsibility for the property.</p>
+                <p> Tablets must not be left unattended at any time.
+                    Any malfunctions should be reported to staff when the tablet is returned.</p>
+            </p>
+            <p>
+                <h4>IPAD USE</h4>
+                <p>When an iPad is turned off and on after each circulation,  iPads are returned to a default setting and any work done by the user is erased.</p>
+                <p>The Library is not responsible for any files left on any ipads or for loss of or damage to a users file during the loan period. </p>
+                <p>The Library is not responsible for any computer viruses that may be transferred to, or from, a users CD or DVD. </p>
+            </p>
+            <p>
+                <h4>REPLACEMENT CHARGES</h4>
+                <p>A replacement charge for damage to or the loss of a iPad and/or its peripherals will be assessed as necessary. The estimated value of the equipment is $500. A processing fee of $35 and overdue fines may also be incurred, depending upon circumstances.</p>
+            </p>
+        ]]>
+    </string>
+
+    <string name="computer_detail">
+        <![CDATA[
+
+	    <table >
+		<tr >
+			<th>Location</th><th s>Total</th><th >Free</th>
+		</tr><tr>
+			<td>Science and Engineering Library</td><td>43</td><td>37</td>
+		</tr><tr >
+			<td>Central Library - Basement classroom</td><td>27</td><td>27</td>
+		</tr><tr>
+			<td>Central Library - Basement</td><td>5</td><td>5</td>
+		</tr><tr >
+			<td>Central Library - 5th floor</td><td>26</td><td>19</td>
+		</tr><tr>
+			<td>Central Library - 4th floor</td><td>12</td><td>12</td>
+		</tr><tr >
+			<td>Central Library - 3rd floor classroom</td><td>30</td><td>30</td>
+		</tr><tr>
+			<td>Central Library - 3rd floor</td><td>12</td><td>9</td>
+		</tr><tr >
+			<td>Central Library - 2nd floor</td><td>80</td><td>59</td>
+		</tr><tr>
+			<td>Central Library - 1st floor - Service Area</td><td>6</td><td>5</td>
+		</tr><tr >
+			<td>Central Library - 1st floor - Fab Lab</td><td>12</td><td>4</td>
+		</tr><tr>
+			<td>Architecture and Fine Arts Library</td><td>16</td><td>11</td>
+		</tr>
+	</table>
+
+
+        ]]>
+    </string>
+
+    <string-array name="navigation_drawer_items_array">
+        <item>Connect</item>
+        <item>Fixtures</item>
+        <item>Table</item>
+    </string-array>
+
+</resources>
